@@ -3,6 +3,8 @@ version: "3.8"
 services:
   app:
     build: .
+    environment:
+      DATABASE_URL: postgres://postgres@example/HiRio
     command: npm run dev
     working_dir: /app
     volumes:
@@ -27,6 +29,6 @@ services:
 
 volumes:
   postgres-volume:
-    name: "toti-exercicio-postgres-volume"
+    name: "HiRio-volume"
   app-node-modules:
-    name: "toti-exercicio-app-node-modules"
+    name: "HiRio-modules"

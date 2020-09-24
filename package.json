@@ -1,5 +1,5 @@
 {
-  "name": "toti-nodejs-exercicio-2020",
+  "name": "HIRIo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiagoamaro/toti-nodejs-exercicio-2020.git"
+    "url": "git+https://github.com/genesysrm/HiRioProject"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tiagoamaro/toti-nodejs-exercicio-2020/issues"
+    "url": "https://github.com/genesysrm/HiRioProject/issues"
   },
-  "homepage": "https://github.com/tiagoamaro/toti-nodejs-exercicio-2020#readme",
+  "homepage": "https://github.com/genesysrm/HiRioProject#readme",
   "dependencies": {
     "express": "^4.17.1",
     "pg": "^8.3.2",

@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "example",
-    "database": "task-list",
+    "database": "HiRio",
     "host": "db",
     "dialect": "postgres"
   },

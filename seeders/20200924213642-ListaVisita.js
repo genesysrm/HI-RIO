@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -10,25 +10,14 @@ module.exports = {
      *   name: 'John Doe',
      *   isBetaMember: false
      * }], {});
-     *
     */
-
-    await queryInterface.bulkInsert('Tasks', [{
-      description: 'Batata',
-      done: false,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    }, {
-      description: 'Cenoura',
-      done: false,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    }, {
-      description: 'Maçãs',
-      done: true,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    }])
+   await queryInterface.bulkInsert('ListaVisita', [{
+    id_lugar: '9',
+    nome_lista: 'Corcovado',
+    visitou_lista: true,
+    comentarios_lista:"Adorei a visita no Corcovado, o Cristo Redentor é maravilhoso",
+    valor_lista: 180.00
+  }]);
   },
 
   down: async (queryInterface, Sequelize) => {
@@ -39,4 +28,4 @@ module.exports = {
      * await queryInterface.bulkDelete('People', null, {});
      */
   }
-}
+};
