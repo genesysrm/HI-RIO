@@ -12,11 +12,14 @@ module.exports = {
      * }], {});
     */
    await queryInterface.bulkInsert('ListaVisita', [{
-    id_lugar: '9',
-    nome_lista: 'Corcovado',
-    visitou_lista: true,
-    comentarios_lista:"Adorei a visita no Corcovado, o Cristo Redentor é maravilhoso",
-    valor_lista: 180.00
+    id_lugar: '1',
+    nome_lista: 'Jardim Botânico',
+    visitou_lista: false,
+    comentarios_lista:'Gostaria de conhecer o Jardim Botanico',
+    valor_lista:100,
+    createdAt: new Date(),
+    updatedAt: new Date()
+
   }]);
   },
 

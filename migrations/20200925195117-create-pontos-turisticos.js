@@ -1,32 +1,33 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('ListaVisita', {
-      id_lista: {
+    await queryInterface.createTable('PontosTuristicos', {
+      id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id_lugar: {
-        type: Sequelize.INTEGER
-      },
-      nome_lista: {
+      nome_lugar: {
         type: Sequelize.STRING
       },
-      visitou_lista: {
-        type: Sequelize.BOOLEAN
-      },
-      comentarios_lista: {
+      endereco_lugar: {
         type: Sequelize.STRING
       },
-      valor_lista: {
+      valor_lugar: {
         type: Sequelize.INTEGER
       },
-      
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      }
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('ListaVisita');
+    await queryInterface.dropTable('PontosTuristicos');
   }
 };
